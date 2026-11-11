@@ -1,0 +1,47 @@
+BDD:npm install --save-dev @badeball/cypress-cucumber-preprocessor
+npm install --save-dev @bahmutov/cypress-esbuild-preprocessor
+
+Bydeafult CSS suprrot only CSS slector with a diff combination like ID, Class, attrubute.
+if we want to use Xpath or getbyrole then we have to install cypress pluging.
+npm install -D cypress-xpath cy.xpath() , cy.get(CSS locator)
+
+Asseration: Asseration is a validation ponit. with help of Asseration we can verify the expected 
+result. like title of page or some elemnt is disapled on webPage or not,or some properity on 
+the web element.
+To do that cypress mainly provide Two type of Asseration
+1) implicit Asseration: these are the defult asseration in cypress 
+under implicit will mainly used two things like Should,and. it's a two keyworked 
+eq,contain,include, exist,have.lenght, have.value, not.eq, be,visible
+
+2) Explicit Asseration : so to use these asseration we need to write explicitly: 
+two keyworked mainly will useed expect (BDD),assert(TDD).
+//
+"Implicit wait is a global wait that tells Selenium to wait for an element while locating it. 
+You can configure it in your common setup file or before starting your test execution.
+Explicit wait is condition-based and waits for a particular condition, such as element visibility or 
+clickability. I prefer explicit wait because it provides better control and flexibility."
+Explicit Wait should be written inside the test or reusable method wherever you need to wait for a specific condition.
+//
+Handles Checkbox and Radio button: .check(),uncheck()
+.check().shuld('be.checked); .shuld('not.be.checked);
+checkbox : same like raidon button.
+uncheck()
+//
+DropDwons:
+1. having select Tag:
+cy.get().select('value').shuuld('have.value','value');
+2. Not having select tag or bootstram DropDwons
+cy.get('DropDwons').click();
+type the value: cy.get('search').type('ind').type('{enter}')
+cy.get('DropDwons').should('have.text','value');
+3. Auto suggested dropdown:
+4. Dymanic DropDwons: we have to wrtie the function: by using each,wrap and if elase cond.'google' 
+
+//
+Alerts:
+//
+
+
+
+
+

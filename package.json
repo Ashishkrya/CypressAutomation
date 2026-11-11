@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ashish",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cypress": "^15.14.1",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^28.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@testing-library/cypress": "^10.1.3",
+    "@types/chai": "^5.2.3",
+    "cypress-xpath": "^2.0.1"
+  }
+}
