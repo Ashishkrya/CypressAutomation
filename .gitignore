@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Node modules
+node_modules/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Test reports
+allure-results/
+allure-report/
